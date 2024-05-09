@@ -12,6 +12,5 @@ export const styles = StyleSheet.create({
   buttonText: {
     color: 'white',
     fontSize: 32,
-    fontWeight: '700'
   }
 });

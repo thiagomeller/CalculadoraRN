@@ -9,7 +9,7 @@ interface ViewCalculusProps {
 const ViewCalculus = ({ calculus }: ViewCalculusProps) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.textCalculus}>{calculus}</Text>
+      <Text style={styles.textCalculus}>{calculus ? calculus : "0"}</Text>
     </View>
   );
 };

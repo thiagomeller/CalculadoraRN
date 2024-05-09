@@ -4,12 +4,21 @@ import { styles } from "./styles";
 
 interface SimpleButtonProps {
   title: string;
+  onPress: () => void;
+  backgroundColor?: string;
 }
 
-const SimpleButton = ({ title }: SimpleButtonProps) => {
+const SimpleButton = ({
+  title,
+  onPress,
+  backgroundColor = "#383838",
+}: SimpleButtonProps) => {
   return (
-    <TouchableOpacity style={styles.container}>
-      <Text style={styles.buttonText}>{title}</Text>
+    <TouchableOpacity
+      style={[styles.container, { backgroundColor: backgroundColor }]}
+      onPress={() => onPress()}
+    >
+      <Text style={[styles.buttonText]}>{title}</Text>
     </TouchableOpacity>
   );
 };

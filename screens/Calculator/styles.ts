@@ -7,4 +7,7 @@ export const styles = StyleSheet.create({
     backgroundColor: '#121212',
     gap: 8
   },
+  wrapper: {
+    flex: 1, flexDirection: "row", gap: 8
+  }
 });
